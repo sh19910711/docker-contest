@@ -2,7 +2,7 @@ FROM ubuntu:17.10
 
 RUN apt update && apt install -y vim w3m golang git tmux
 
-ENV VERSION=0.0.1
+ENV VERSION=0.0.2
 RUN go get github.com/sh19910711/cfproxy
 RUN go get github.com/sh19910711/cfurl
 RUN echo 'cfw3m() {' >> $HOME/.bashrc && \
